@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
 import React from "react";
-import InputSearch from "./InputSearch";
 
 function DesktopNavBar() {
   return (

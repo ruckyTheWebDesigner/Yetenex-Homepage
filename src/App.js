@@ -2,6 +2,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useMediaQuery } from "@mui/material";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { useMemo } from "react";
 
 import HomePage from "./pages/HomePage";
@@ -42,7 +44,11 @@ function App() {
     <>
       <ThemeProvider theme={defaultTheme}>
         <CssBaseline />
-        <HomePage />
+        <Router>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+          </Routes>
+        </Router>
       </ThemeProvider>
     </>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import DesktopNavBar from "../components/DesktopNavBar";
 import MobileNavbar from "../components/MobileNavbar";
 import Hero from "../components/Hero";
-import HowItWorks from "../components/HowItWorks";
 import WhyUs from "../components/WhyUs";
 import ForFreelancers from "../components/ForFreelancers";
 import BrowseFreelancers from "../components/BrowseFreelancers";

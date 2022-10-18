@@ -37,7 +37,7 @@ function Hero() {
 
           <div className='flex space-x-3 items-start md:items-center'>
             <p className='pt-1 md:pt-0'>Popular</p>
-            <div className='grid grid-cols-2 lg:grid-cols-3 gap-2'>
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-3'>
               <a href='#/'>
                 <Card
                   className='p-1 flex flex-col items-center'

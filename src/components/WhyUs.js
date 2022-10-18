@@ -1,7 +1,7 @@
 import { Card } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { AiOutlineFileSearch, AiOutlineFileDone } from "react-icons/ai";
+import { AiOutlineFileSearch } from "react-icons/ai";
 import { FaRegHandPointer } from "react-icons/fa";
 import { MdSecurity } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
