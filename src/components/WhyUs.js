@@ -27,7 +27,7 @@ function WhyUs() {
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6'>
           <Card
             variant='outlined'
-            className='py-4 px-6 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
+            className='p-5 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
             <div className='border border-secondary rounded-full w-14 h-14 p-4 flex flex-col justify-center items-center'>
               <AiOutlineFileSearch className='text-4xl' />
             </div>
@@ -41,7 +41,7 @@ function WhyUs() {
           </Card>
           <Card
             variant='outlined'
-            className='p-6 md:p-6 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
+            className='p-5 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
             <div className='border border-secondary rounded-full w-14 h-14 p-4 flex flex-col justify-center items-center'>
               <FaRegHandPointer className='text-4xl' />
             </div>
@@ -53,7 +53,7 @@ function WhyUs() {
           </Card>
           <Card
             variant='outlined'
-            className='p-6 md:p-6 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
+            className='p-5 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
             <div className='border border-secondary rounded-full w-14 h-14 p-4 flex flex-col justify-center items-center'>
               <MdSecurity className='text-4xl' />
             </div>
@@ -65,7 +65,7 @@ function WhyUs() {
           </Card>
           <Card
             variant='outlined'
-            className='p-6 md:p-6 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
+            className='p-5 flex flex-col space-y-4 items-center md:items-start text-center md:text-left'>
             <div className='border border-secondary rounded-full w-14 h-14 p-4 flex flex-col justify-center items-center'>
               <BiSupport className='text-4xl' />
             </div>
