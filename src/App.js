@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { useMediaQuery } from "@mui/material";
+
+import { useMemo } from "react";
+
+import HomePage from "./pages/HomePage";
 
 function App() {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+
+  const defaultTheme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: prefersDarkMode ? "dark" : "light",
+
+          background: {
+            default: prefersDarkMode ? "#0f172a" : "#f5f5f5",
+            paper: prefersDarkMode ? "#0f172a" : "#fff",
+          },
+
+          primary: {
+            main: prefersDarkMode ? "#47B5FF" : "#256D85",
+          },
+
+          secondary: {
+            main: prefersDarkMode ? "#14532d" : "#14532d",
+          },
+
+          text: {
+            primary: prefersDarkMode ? "#fff" : "#0f172a",
+            secondary: prefersDarkMode ? "#fff" : "#0f172a",
+            disabled: prefersDarkMode ? "#fff" : "#000",
+          },
+        },
+      }),
+    [prefersDarkMode]
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={defaultTheme}>
+        <CssBaseline />
+        <HomePage />
+      </ThemeProvider>
+    </>
   );
 }
 
